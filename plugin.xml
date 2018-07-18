@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
-    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-honeywell-barcode-scanner" version="0.0.1">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-honeywell-barcode-scanner" version="0.0.11">
     <name>HoneywellBarcodeScanner</name>
     <description>Cordova plugin for Android Honeywell barcode scanner.</description>
     <license>MIT</license>
