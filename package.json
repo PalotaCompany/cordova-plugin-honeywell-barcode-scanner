@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-honeywell-barcode-scanner",
+  "version": "0.0.1",
+  "description": "Cordova plugin for Android Honeywell barcode scanner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PalotaCompany/cordova-plugin-honeywell-barcode-scanner.git"
+  },
+  "keywords": [
+    "cordova",
+    "honeywell",
+    "android",
+    "ionic",
+    "plugin",
+    "barcode",
+    "scanner"
+  ],
+  "author": "Kholofelo Moyaba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PalotaCompany/cordova-plugin-honeywell-barcode-scanner/issues"
+  },
+  "homepage": "https://github.com/PalotaCompany/cordova-plugin-honeywell-barcode-scanner#readme"
+}
