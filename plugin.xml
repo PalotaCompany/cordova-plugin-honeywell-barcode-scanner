@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-honeywell-barcode-scanner" version="0.0.1">
+    <name>HoneywellBarcodeScanner</name>
+    <description>Cordova plugin for Android Honeywell barcode scanner.</description>
+    <license>MIT</license>
+    <keywords>cordova,honeywell,android,barcode,scanner</keywords>
+    <js-module name="HoneywellBarcodeScanner" src="www/honeywellBarcodeScanner.js">
+        <clobbers target="cordova.plugins.honeywell.barcode" />
+    </js-module>
+    <engines>
+        <engine name="cordova" version=">=3.6.0"></engine>
+    </engines>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="HoneywellBarcodeScannerPlugin">
+                <param name="android-package" value="za.co.palota.honeywell.HoneywellBarcodeScannerPlugin"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="com.honeywell.decode.permission.DECODE" />
+        </config-file>
+        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference" />
+        <resource-file src="src/android/libs/DataCollection.aar" target="libs/DataCollection.aar" />
+        <source-file src="src/android/HoneywellBarcodeScannerPlugin.java" target-dir="src/za/co/palota/honeywell" />
+    </platform>
+</plugin>
