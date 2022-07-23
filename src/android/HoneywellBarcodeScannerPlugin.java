@@ -62,6 +62,11 @@ public class HoneywellBarcodeScannerPlugin extends CordovaPlugin implements Barc
                     properties.put(BarcodeReader.PROPERTY_CENTER_DECODE, true);
                     // Enable bad read response
                     properties.put(BarcodeReader.PROPERTY_NOTIFICATION_BAD_READ_ENABLED, true);
+                    
+                    // Enable Check digits for UPCA and EAN13 
+                    properties.put(BarcodeReader.PROPERTY_UPC_A_CHECK_DIGIT_TRANSMIT_ENABLED, true);
+                    properties.put(BarcodeReader.PROPERTY_EAN_13_CHECK_DIGIT_TRANSMIT_ENABLED, true);
+                    
                     // Apply the settings
                     barcodeReader.setProperties(properties);
 
